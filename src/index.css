@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  @font-face {
+    font-family: "Quicksand";
+    src: url("./Fonts/Quicksand-VariableFont_wght.ttf");
+  }
+  @font-face {
+    font-family: "Heebo";
+    src: url("./Fonts/Heebo-VariableFont_wght.ttf");
+  }
+  @font-face {
+    font-family: "Monsterrat";
+    src: url("./Fonts/Montserrat-VariableFont_wght.ttf");
+  }
+  @font-face {
+    font-family: "Jacquard";
+    src: url("./Fonts/Jacquard12-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Roboto Mono";
+    src: url("./Fonts/RobotoMono-VariableFont_wght.ttf");
+  }
+  @font-face {
+    font-family: "Sen";
+    src: url("./Fonts/Sen-VariableFont_wght.ttf");
+  }
+  @font-face {
+    font-family: "Mada";
+    src: url("./Fonts/Mada-VariableFont_wght.ttf");
+  }
+  @font-face {
+    font-family: "Staatliches";
+    src: url("./Fonts/Staatliches-Regular.ttf");
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.section-headings{
+  font-family:'Sen', Courier, monospace;
+  text-align: center;
+  
+  
+  
+  
+}
+
+body{
+  background-color:white;
 }
