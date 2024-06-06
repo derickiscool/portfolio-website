@@ -34,19 +34,19 @@ export type ProjectDetailsProps = {
 const ProjectDetailsCard = (props: ProjectDetailsProps) => {
 
     return (
-        <div className="bg-[#FFFFE4] h-screen w-screen  hidden fixed px-4 pt-4 z-[20]" id="project-details">
+        <div className="bg-[#FFFFE4] h-screen w-screen  hidden fixed px-4 pt-4 z-[20] lg:overflow-y-scroll  " id="project-details">
             <div className="flex justify-between items-center">
                 <img src={signature} alt="home button" className="w-16 invisible" />
                 <img src={cross} alt="hamburger menu" className="w-16 fixed left-[80%]" onClick={HideProjectDetailsCard} />
             </div>
-            <div  className="prose prose-lg mb-24"> 
+            <div  className="prose prose-lg mb-24 lg:mx-auto "> 
                 <PortableText
                     value={props.caseStudy}
                     components={{
                         types : {
                             image: ({value}) => {
                                 console.log(value);
-                                return (<img src={urlFor(value).url()} alt="" />)
+                                return (<img src={urlFor(value).url()} alt="" className="mx-auto"/>)
                             },
                         }
                     }}
