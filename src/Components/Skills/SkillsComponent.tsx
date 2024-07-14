@@ -16,65 +16,58 @@ const SkillsComponent = () => {
 
     return (
 
-        <div className="bg-[#fed766] w-full px-6 py-8" id="skills">
-            <h2 className="section-headings text-5xl">SKILLS</h2>
-            <p className="font-mada text-center mt-4">Some of the languages and frameworks I use to create projects</p>
-            <div className="mt-8 grid grid-cols-2 gap-8 lg:w-[80%] lg:mx-auto lg:px-[10%] lg:grid-cols-7">
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <img src={css} alt="" className="w-[80%] lg:w-full" />
-                    <p className="font-robotoMono text-lg">CSS</p>
+        <div className="bg-[#fed766] w-full px-6 py-8 relative " id="skills">
+            <div className="divider fill-[#ff9fb2]">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="h-[60px] [transform:rotateY(180deg)]">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
+                </svg>
+            </div>
+            <div className="h-[60px]">
+
+            </div>
+            <h2 className="section-headings text-5xl">SOFTWARE</h2>
+            <div className="mt-8 grid grid-cols-2 gap-8  lg:w-[80%] lg:mx-auto lg:px-[10%] lg:grid-cols-7 font-medium">
+                <div className="flex flex-col justify-center items-center gap-4 px-8">
+                    <img src={nextjs} alt="" className="w-[80%] lg:w-full" />
+                    <p className="font-quicksand text-lg">NEXTJS</p>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <img src={html} alt="" className="w-[80%]lg:w-full" />
-                    <p className="font-robotoMono text-lg">HTML</p>
+                <div className="flex flex-col justify-center items-center gap-4 px-8">
+                    <img src={react} alt="" className="w-[80%] lg:w-full" />
+                    <p className="font-quicksand text-lg">REACT</p>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <img src={nextjs} alt="" className="w-[80%]lg:w-full" />
-                    <p className="font-robotoMono text-lg">NEXTJS</p>
+
+
+                <div className="flex flex-col justify-center items-center gap-4 px-8">
+                    <img src={flutter} alt="" className="w-[80%] lg:w-full" />
+                    <p className="font-quicksand text-lg">FLUTTER</p>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <img src={react} alt="" className="w-[80%]lg:w-full" />
-                    <p className="font-robotoMono text-lg">REACT</p>
+                <div className="flex flex-col justify-center items-center gap-4 px-8">
+                    <img src={swift} alt="" className="w-[80%] lg:w-full" />
+                    <p className="font-quicksand text-lg">SWIFT</p>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <img src={sanity} alt="" className="w-[80%]lg:w-full" />
-                    <p className="font-robotoMono text-lg">SANITY</p>
+                <div className="flex flex-col justify-center items-center gap-4 px-8">
+                    <img src={mongo} alt="" className="w-[80%] lg:w-full" />
+                    <p className="font-quicksand text-lg">MONGO</p>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <img src={penpot} alt="" className="w-[80%]lg:w-full" />
-                    <p className="font-robotoMono text-lg">PENPOT</p>
+                <div className="flex flex-col justify-center items-center gap-4 px-8">
+                    <img src={cplus} alt="" className="w-[80%] lg:w-full" />
+                    <p className="font-quicksand text-lg">C++</p>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <img src={flutter} alt="" className="w-[80%]lg:w-full" />
-                    <p className="font-robotoMono text-lg">FLUTTER</p>
+                <div className="flex flex-col justify-center items-center gap-4 px-8">
+                    <img src={csharp} alt="" className="w-[80%] lg:w-full" />
+                    <p className="font-quicksand text-lg">C#</p>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <img src={swift} alt="" className="w-[80%]lg:w-full" />
-                    <p className="font-robotoMono text-lg">SWIFT</p>
+                <div className="flex flex-col justify-center items-center gap-4 px-8">
+                    <img src={python} alt="" className="w-[80%] lg:w-full" />
+                    <p className="font-quicksand text-lg">PYTHON</p>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <img src={mongo} alt="" className="w-[80%]lg:w-full" />
-                    <p className="font-robotoMono text-lg">MONGO</p>
+                <div className="flex flex-col justify-center items-center gap-4 px-8">
+                    <img src={gms} alt="" className="w-[80%] lg:w-full" />
+                    <p className="font-quicksand text-lg">GMS2</p>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <img src={cplus} alt="" className="w-[80%]lg:w-full" />
-                    <p className="font-robotoMono text-lg">C++</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <img src={csharp} alt="" className="w-[80%]lg:w-full" />
-                    <p className="font-robotoMono text-lg">C#</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <img src={python} alt="" className="w-[80%]lg:w-full" />
-                    <p className="font-robotoMono text-lg">PYTHON</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <img src={gms} alt="" className="w-[80%]lg:w-full" />
-                    <p className="font-robotoMono text-lg">GMS2</p>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-4">
-                    <img src={unity} alt="" className="w-[80%]lg:w-full" />
-                    <p className="font-robotoMono text-lg">UNITY</p>
+                <div className="flex flex-col justify-center items-center gap-4 px-8">
+                    <img src={unity} alt="" className="w-[80%] lg:w-full" />
+                    <p className="font-quicksandtext-lg">UNITY</p>
                 </div>
             </div>
         </div>

@@ -39,14 +39,29 @@
 
 
 .section-headings{
-  font-family:'Sen', Courier, monospace;
-  text-align: center;
-  
-  
-  
-  
+  font-family:'Staatliches', Courier, monospace;
+  text-align: center;  
 }
 
 body{
   background-color:white;
+}
+
+.divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+
+  
+
+  
 }

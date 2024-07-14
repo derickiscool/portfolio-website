@@ -25,7 +25,7 @@ type ButtonsProps = {
 const ProjectTags = (props: ProjectTagProps) => {
     const { tags } = props
     return (
-        <div className="flex gap-2 items-center justify-center">
+        <div className="flex gap-4 items-center justify-center">
             {tags && tags.map((tag: any, index) => {
                 return (
                     <img src={urlFor(tag).url()} alt="" className="w-12" key={index} />
@@ -67,8 +67,8 @@ const ProjectCard = (props: ProjectCardProps) => {
                 <img src={urlFor(featureImage).url()} alt="" className=" rounded-lg p-8" />
             </div>
             <div className="flex flex-col justify-center items-center gap-4 lg:items-start lg:pr-[30%] lg:gap-8">
-                <h3 className="font-staatliches text-3xl">{title}</h3>
-                <p className="font-robotoMono text-center lg:text-left">{description}</p>
+                <h3 className="font-mada text-3xl">{title.toUpperCase()}</h3>
+                <p className="font-quicksand text-center lg:text-left font-medium">{description}</p>
                 <ProjectTags tags={tag} />
                 <ProjectButtons caseStudy={caseStudy} siteLink={siteLink} setCurrentProject={setCurrentProject} />
             </div>

@@ -27,13 +27,13 @@ const Home = () => {
 
     return (
         <>
-            
+
             <ProjectDetailsCard caseStudy={currentProject} />
             <HomeComponent />
             <AboutComponent />
             <SkillsComponent />
-            <ProjectShowcase props = {{projects, setCurrentProject}}/>
-
+            <ProjectShowcase props={{ projects, setCurrentProject }} />
+          
         </>
 
 
